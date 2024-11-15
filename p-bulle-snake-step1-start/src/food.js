@@ -9,7 +9,7 @@
  * @param {HTMLCanvasElement} canvas - L'élément canvas représentant la surface de jeu.
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
-function generateFood() {
+export function generateFood() {
   // A compléter
 }
 

@@ -17,3 +17,9 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 
 ### semaine prochaine
     - je vais finir la doc sur js et commencer le projet snake
+
+## 15.11.2024
+### premiere 10 minutes
+    explication du prof
+
+### coder pendant le reste du temps
