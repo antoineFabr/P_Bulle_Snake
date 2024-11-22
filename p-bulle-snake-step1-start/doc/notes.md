@@ -23,3 +23,11 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     explication du prof
 
 ### coder pendant le reste du temps
+
+## 22.11.2024
+### coder
+    avancement dans la création du snake,
+    du deplacement du snake
+    et aboutissement de la detection des touches
+### prochaine fois
+    augmenter la taille du serpent
