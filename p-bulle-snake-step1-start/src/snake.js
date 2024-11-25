@@ -8,7 +8,7 @@
  */
 export function initSnake() {
   // A compléter
-  return {x:40, y: 180};
+  return { x: 40, y: 180 };
 }
 
 /**
@@ -25,21 +25,22 @@ export function initSnake() {
  */
 export function moveSnake(snake, sens) {
   // A compléter
-  if (sens === "RIGHT"){
+  let direction;
+  if (sens === "RIGHT" && direction != 1) {
     snake.x += 20;
-    
+    direction = 0;
   }
-  if (sens ==="LEFT"){
+  if (sens === "LEFT" && direction != 0) {
     snake.x -= 20;
-    
+    direction = 1;
   }
-  if (sens ==="UP"){
+  if (sens === "UP" && direction != 3) {
     snake.y -= 20;
-    
+    direction = 2;
   }
-  if (sens ==="DOWN"){
-    snake.y +=20
-    
+  if (sens === "DOWN" && direction != 2) {
+    snake.y += 20
+    direction = 3;
   }
   return snake;
 }
@@ -60,15 +61,23 @@ export function drawSnake(snake) {
   // A compléter
   const canvas = document.getElementById("gameCanvas");
   const ctx = canvas.getContext("2d");
- 
+
   ctx.beginPath();
-  
+
   ctx.fillStyle = "pink";
   ctx.fillRect(snake.x, snake.y, 20, 20);
   ctx.rect(snake.x, snake.y, 20, 20);
-  
-  
 
-  
- 
+  for (let pas; pas < 10; pas++) {
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.fillStyle = "pink";
+    ctx.fillRect(snake.x -(20*pas), snake.y-(10*pas), 20, 20);
+    ctx.rect(snake.x-(20*pas), snake.y-(20*pas), 20, 20);
+  }
+
+
+
+
 }
