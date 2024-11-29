@@ -52,4 +52,7 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### corp du serpent
     ajout de la methode addNumberSnake() qui va ajouter un carré de plus au snake 
     en plus de cette methode j'ai modifié la methode drawSnake() qui va dessiner tous les carrés du snake. 
-    
+
+### collision food
+    ajout de la methode checkFoodCollision() qui va voir si la tete du serpent est sur la nouriture 
+    si c'est le cas ca doit regenerer une position pour la nouriture et ajouter un au score
