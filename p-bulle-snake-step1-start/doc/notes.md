@@ -36,4 +36,8 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 
 ### discution avec monsieur Carrel
     comment faire un journal de travail avec GIT
-    il est important de reussir ces periodes de pratique 
+    il est important de reussir ces periodes de pratique
+
+### debug de l'apparition de la nouriture
+    le probleme etait la formulation du return de la fonction 
+    generateFood() . maintenant un carré representant la nouriture apparait.
