@@ -31,3 +31,9 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     et aboutissement de la detection des touches
 ### prochaine fois
     augmenter la taille du serpent
+
+## 29.11.24 
+
+### discution avec monsieur Carrel
+    comment faire un journal de travail avec GIT
+    il est important de reussir ces periodes de pratique 
