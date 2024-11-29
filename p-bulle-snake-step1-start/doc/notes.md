@@ -41,3 +41,10 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### debug de l'apparition de la nouriture
     le probleme etait la formulation du return de la fonction 
     generateFood() . maintenant un carré representant la nouriture apparait.
+
+### apparition de nouriture
+    avant l'apparion de la nouriture etait aléatoire,
+    le probleme etait que quand le snake passait sur la nouriture c'etait 
+    pas parfaitement aligné.
+    Maintenant l'apparition est toujours aléatoire mais avant de retourner les valeurs X et Y 
+    de la nouriture on arrondit ces valeurs a des multiples de 20 comme cela le snake et la nouriture apparaisse sur la meme grille.
