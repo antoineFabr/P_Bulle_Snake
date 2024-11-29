@@ -48,3 +48,8 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     pas parfaitement aligné.
     Maintenant l'apparition est toujours aléatoire mais avant de retourner les valeurs X et Y 
     de la nouriture on arrondit ces valeurs a des multiples de 20 comme cela le snake et la nouriture apparaisse sur la meme grille.
+
+### corp du serpent
+    ajout de la methode addNumberSnake() qui va ajouter un carré de plus au snake 
+    en plus de cette methode j'ai modifié la methode drawSnake() qui va dessiner tous les carrés du snake. 
+    
