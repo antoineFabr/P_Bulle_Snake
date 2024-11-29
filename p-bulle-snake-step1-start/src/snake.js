@@ -8,7 +8,9 @@
  */
 export function initSnake() {
   // A compléter
-  return { x: 40, y: 180 };
+  
+  let head = { x: 40 , y:180};
+  return [head];
 }
 
 /**
@@ -23,28 +25,34 @@ export function initSnake() {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la distance de déplacement du serpent.
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
-export function moveSnake(snake, sens) {
+export function moveSnake(snake,sens ) {
   // A compléter
+  for (let i = snake.length -1; i > 0; i--)
+    {
+      snake[i].x = snake[i - 1].x
+      snake[i].y = snake[i - 1].y
+    }
   let direction;
   if (sens === "RIGHT" && direction != 1) {
-    snake.x += 20;
+    snake[0].x += 20;
     direction = 0;
   }
   if (sens === "LEFT" && direction != 0) {
-    snake.x -= 20;
+    snake[0].x -= 20;
     direction = 1;
   }
   if (sens === "UP" && direction != 3) {
-    snake.y -= 20;
+    snake[0].y -= 20;
     direction = 2;
   }
   if (sens === "DOWN" && direction != 2) {
-    snake.y += 20
+    snake[0].y += 20
     direction = 3;
   }
   return snake;
 }
 
+ 
 /**
  * Dessine le serpent sur le canvas.
  *
@@ -57,27 +65,28 @@ export function moveSnake(snake, sens) {
  * @param {Array<{x: number, y: number}>} snake - Un tableau représentant le serpent, où chaque élément est un segment avec des coordonnées `x` et `y`.
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de chaque segment du serpent.
  */
-export function drawSnake(snake) {
+export function drawSnake(snake,ctx,box) {
   // A compléter
-  const canvas = document.getElementById("gameCanvas");
-  const ctx = canvas.getContext("2d");
 
-  ctx.beginPath();
-
-  ctx.fillStyle = "pink";
-  ctx.fillRect(snake.x, snake.y, 20, 20);
-  ctx.rect(snake.x, snake.y, 20, 20);
-
-  for (let pas; pas < 10; pas++) {
-    const canvas = document.getElementById("gameCanvas");
-    const ctx = canvas.getContext("2d");
+  for(let pas = 0 ; pas < snake.length; pas++){
+    
+    if(pas ==0){
+      ctx.fillStyle = "pink";
+    }
+    else{
+      ctx.fillStyle = "#dfabb2";
+    }
     ctx.beginPath();
-    ctx.fillStyle = "pink";
-    ctx.fillRect(snake.x -(20*pas), snake.y-(10*pas), 20, 20);
-    ctx.rect(snake.x-(20*pas), snake.y-(20*pas), 20, 20);
+   
+    ctx.fillRect(snake[pas].x, snake[pas].y, box, box);
+    ctx.rect(snake[pas].x, snake[pas].y, box, box);
   }
+}
 
+export function addNumberSnake(snake){
 
-
-
+  let lastrectangle = snake[snake.length - 1]
+  let newrectangle = {x: lastrectangle.x , y: lastrectangle.y}
+  snake.push(newrectangle);
+  
 }

@@ -12,9 +12,22 @@
 export function generateFood(box,canvas) {
   // A compléter
   let y = Math.floor(Math.random() * canvas.height);
-  
+ 
+  y = y/20 ;
+ 
+  y = Math.round(y);
+
+  y = y * 20;
+ 
   let x = Math.floor(Math.random() * canvas.width);
-  return x,y;
+  
+  x = x/20 ;
+  
+  x = Math.round(x);
+ 
+  x = x * 20;
+ 
+  return { x, y };
 }
 
 /**
@@ -28,14 +41,13 @@ export function generateFood(box,canvas) {
  * @param {{x: number, y: number}} food - Un objet contenant les coordonnées `x` et `y` où la nourriture doit être dessinée.
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de la nourriture.
  */
-export function drawFood(food,box) {
+export function drawFood(food,box,ctx) {
   // A compléter
-  const canvas = document.getElementById("gameCanvas");
-  const ctx = canvas.getContext("2d");
+  ctx.beginPath();
 
   ctx.fillStyle = "red";
-  ctx.beginPath();
-  ctx.rect(food.y -55, food.x-55, box, box);
-  ctx.fillRect(food.y-55, food.x-55, box, box);
+  
+  ctx.rect(food.x ,food.y , box, box);
+  ctx.fillRect(food.x, food.y, box, box);
  
 }

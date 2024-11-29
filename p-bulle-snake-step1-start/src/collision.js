@@ -1,3 +1,4 @@
+import { generateFood} from "./food.js";
 /**
  * Vérifie si la tête du serpent entre en collision avec son propre corps.
  *
@@ -14,7 +15,7 @@ function checkCollision() {
   // A compléter
 }
 
-/**
+/** 
  * Vérifie si la tête du serpent entre en collision avec les murs du canvas.
  *
  * Cette fonction détermine si la tête du serpent a dépassé les limites du canvas,
@@ -29,4 +30,14 @@ function checkCollision() {
  */
 function checkWallCollision() {
   // A compléter
+}
+
+export function checkFoodCollision(snake, food, point, canvas){
+
+  if(snake[0].x == food.x && snake[0].y == food.y){
+    point++;
+    generateFood(20, canvas);
+    
+  }
+  return point;
 }
