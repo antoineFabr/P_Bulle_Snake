@@ -32,12 +32,7 @@ function checkWallCollision() {
   // A compléter
 }
 
-export function checkFoodCollision(snake, food, point, canvas){
-
-  if(snake[0].x == food.x && snake[0].y == food.y){
-    point++;
-    generateFood(20, canvas);
-    
-  }
-  return point;
+export function checkFoodCollision(snake, food){
+  return snake[0].x == food.x && snake[0].y == food.y;
+ 
 }

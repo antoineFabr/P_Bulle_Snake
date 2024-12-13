@@ -15,23 +15,23 @@ export function handleDirectionChange(event) {
   console.log(event);
   if(event === 'ArrowUp')
   {
-    console.log("haut");
-    return "UP";
+    
+    return "ArrowUp";
   }
   else if(event === 'ArrowDown'){
-    console.log("bas");
-    return "DOWN";
+    
+    return "ArrowDown";
   }
   else if(event === 'ArrowLeft'){
-    console.log("gauche");
-    return "LEFT";
+    
+    return "ArrowLeft";
   }
   else if(event === 'ArrowRight'){
-    console.log("droite");
-    return "RIGHT";
+    
+    return "ArrowRight";
   }
   else{
-    return "RIGHT";
+    return "ArrowRight";
   }
   
  

@@ -65,3 +65,7 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### collision food 
     la derniere fois la methode checkFoodCollision ne fonctionnait pas du coup 
     je l'ai sorti et l'ai mis dans le main et ca a fonctionné.
+
+### collision food 
+    monsieur carrel m'a expliqué comment simplifier mon code 
+    et aussi au passage m'a aidé a bien fix mon problème.

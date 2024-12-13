@@ -15,7 +15,7 @@ const box = 20;
 const gameSpeed = 150;
 let snake;
 let food;
-var sens = "RIGHT";
+var sens = "ArrowRight";
 
 let score = 0;
 let gameInterval; // Variable pour stocker l'identifiant de l'intervalle
@@ -39,21 +39,32 @@ function startGame() {
   addNumberSnake(snake);addNumberSnake(snake);
 }
 
-document.addEventListener("keydown", function(event)  {
-  let key = event.key;
-  sens = handleDirectionChange(key);
-  
-});
+
 function draw() {
- 
+  document.addEventListener("keydown", function(event)  {
+    let key = event.key;
+    if (sens == key){
+
+    }
+    else{
+      sens = handleDirectionChange(key);
+    }
+    
+    
+  });
   ctx.clearRect(0,0,canvas.clientWidth,canvas.clientHeight);
-  console.log(sens);
+  
   
   snake = moveSnake(snake, sens,ctx);
-  
+  if (checkFoodCollision(snake, food)){
+    addNumberSnake(snake);
+    food = generateFood(box, canvas);
+    score += 1;
+  }
   drawSnake(snake,ctx,box);
   drawFood(food,box,ctx);
-  score = checkFoodCollision(snake, food,score,canvas)
+  
+  
 }
 
 
