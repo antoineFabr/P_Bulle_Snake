@@ -11,8 +11,16 @@ import { generateFood} from "./food.js";
  * @param {Array<{x: number, y: number}>} snakeArray - Un tableau d'objets représentant les segments du serpent, où chaque objet contient des coordonnées `x` et `y`.
  * @returns {boolean} - Retourne `true` si la tête du serpent entre en collision avec un segment de son corps, sinon `false`.
  */
-function checkCollision() {
+export function checkCollision(snake) {
   // A compléter
+  
+  for(let i = 1; i < snake.length ; i++){
+    if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
+      return true;
+    }
+    
+  }
+  return false;
 }
 
 /** 
