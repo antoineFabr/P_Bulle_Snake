@@ -60,3 +60,8 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ## 06.12.24
     préparation des portes ouvertes
     je n'ai pas pu travailer
+## 13.12.24
+
+### collision food 
+    la derniere fois la methode checkFoodCollision ne fonctionnait pas du coup 
+    je l'ai sorti et l'ai mis dans le main et ca a fonctionné.
