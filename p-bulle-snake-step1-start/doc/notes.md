@@ -56,3 +56,7 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### collision food
     ajout de la methode checkFoodCollision() qui va voir si la tete du serpent est sur la nouriture 
     si c'est le cas ca doit regenerer une position pour la nouriture et ajouter un au score
+
+## 06.12.24
+    préparation des portes ouvertes
+    je n'ai pas pu travailer
