@@ -74,3 +74,7 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     j'ai corrigé un bug qui était que quand le snake 
     allait a droite on pouvais directement aller a gauche donc passer sur son propre corps.
     ce qui n'est pas voulu. Du coup maintenant on ne peux pas directement aller a la direction opposée.
+
+### collision Wall
+    j'ai remplis la methode checkWallCollision() donc quand le snake 
+    touche un mur, un message apparait qui dit GameOver. quand on clique sur ok. 
