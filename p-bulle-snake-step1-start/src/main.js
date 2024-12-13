@@ -2,7 +2,7 @@ import { initSnake, moveSnake, drawSnake, addNumberSnake } from "./snake.js";
 /*import * as THREE from 'three';*/
 import { generateFood, drawFood } from "./food.js";
 
-import { handleDirectionChange } from "./controls.js";
+import { handleDirectionChange,checkdirection } from "./controls.js";
 //import { checkCollision, checkWallCollision, checkFoodCollision } from "./collision.js";
 import {checkFoodCollision } from "./collision.js";
 //import { drawScore } from "./score.js";
@@ -43,8 +43,8 @@ function startGame() {
 function draw() {
   document.addEventListener("keydown", function(event)  {
     let key = event.key;
-    if (sens == key){
-
+    if (checkdirection(key, sens)){ 
+      
     }
     else{
       sens = handleDirectionChange(key);

@@ -36,3 +36,6 @@ export function handleDirectionChange(event) {
   
  
 }
+export function checkdirection(key, sens){
+  return sens == "ArrowRight" && key == "ArrowLeft" || sens == "ArrowLeft" && key == "ArrowRight" || sens == "ArrowUp" && key == "ArrowDown" || sens == "ArrowDown" && key == "ArrowUp";
+}

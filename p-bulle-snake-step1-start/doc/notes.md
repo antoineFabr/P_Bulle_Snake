@@ -69,3 +69,8 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### collision food 
     monsieur carrel m'a expliqué comment simplifier mon code 
     et aussi au passage m'a aidé a bien fix mon problème.
+
+### controle snake
+    j'ai corrigé un bug qui était que quand le snake 
+    allait a droite on pouvais directement aller a gauche donc passer sur son propre corps.
+    ce qui n'est pas voulu. Du coup maintenant on ne peux pas directement aller a la direction opposée.
