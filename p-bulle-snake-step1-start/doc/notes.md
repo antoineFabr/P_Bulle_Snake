@@ -78,3 +78,8 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### collision Wall
     j'ai remplis la methode checkWallCollision() donc quand le snake 
     touche un mur, un message apparait qui dit GameOver. quand on clique sur ok. 
+
+
+## 20.12.24
+    A cause d'une grippe fulgurante j'était absent durant ce cours.
+    Je n'ai donc pas pu travailler.
