@@ -105,4 +105,9 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     cela va appeler la méthode qui affiche le menu pause.
     ensuite le probleme etait de mettre pause le jeu. 
     je ne savais pas comment faire donc j'ai cherché sur des forums et j'ai trouvé comment faire sur ce site : "https://stackoverflow.com/questions/21277900/how-can-i-pause-setinterval-functions".
-    sauf que maintenant le bug c'est que ca fait aléatoirement pas pause, je dois encore regler ce problème
+    sauf que maintenant le bug c'est que ca fait aléatoirement pas pause, je dois encore regler ce problème.
+
+### question de Monsieur Carrel
+    Monsieur Carrel est venu vers moi afin de défier mes connaissances de mon code
+    avec 2 questions concernant la ligne 36 de la page snake.js et la deuxieme question était sur 
+    la ligne 14 de la page collision.js.
