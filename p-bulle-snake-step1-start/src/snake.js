@@ -66,8 +66,7 @@ export function moveSnake(snake,sens ) {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de chaque segment du serpent.
  */
 export function drawSnake(snake,ctx,box) {
-  // A compléter
-
+  //en premier on affiche la tete donc on la met en rose
   for(let pas = 0 ; pas < snake.length; pas++){
     
     if(pas ==0){
