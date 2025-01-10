@@ -12,7 +12,7 @@
  */
 export function handleDirectionChange(event) {
   
-  console.log(event);
+   
   if(event === 'ArrowUp')
   {
     

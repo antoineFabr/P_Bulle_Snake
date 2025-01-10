@@ -115,3 +115,8 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### correction de code obselete
     suite a l'intervention de monsieur Carrel et a ces conseils j'ai nétoiller la page snake.js
     car il y avait du code obselète.
+
+### ajout du temps de jeu 
+    j'ai ajouter une méthode qui va afficher le temps de jeu 
+    en prennant le nombre de tick du jeu, en le divisant par 6.66 et en enlevant la virgule
+    on a les secondes

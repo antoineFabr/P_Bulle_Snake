@@ -45,6 +45,7 @@ Le code source est organisé dans un répertoire `src/` pour séparer les fichie
 ├── README.md
 ├── vite.config.js
 └── src/
+    ├── affichage.js
     ├── main.js
     ├── snake.js
     ├── food.js
@@ -54,7 +55,7 @@ Le code source est organisé dans un répertoire `src/` pour séparer les fichie
 ```
 
 ### Fichiers et Responsabilités
-
+- **`affichage.js`** : Gère l'affichage du scores et du temps.
 - **`main.js`** : Point d'entrée principal du jeu. Il initialise le jeu, configure les paramètres, et contrôle le cycle de rendu.
 - **`snake.js`** : Contient les fonctions pour initialiser le serpent, le déplacer, et le dessiner sur le canevas.
 - **`food.js`** : Gère la génération et le dessin de la nourriture sur la grille.

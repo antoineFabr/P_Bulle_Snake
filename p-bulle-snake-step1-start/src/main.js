@@ -6,7 +6,7 @@ import { handleDirectionChange,checkdirection } from "./controls.js";
 import {checkWallCollision, checkFoodCollision, checkCollision } from "./collision.js";
 
 import { drawScore } from "./score.js";
-import { menuPause } from "./pause.js";
+import { menuPause, temps } from "./affichage.js";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
@@ -21,6 +21,8 @@ var GameOver;
 let score = 0;  //variable pour stocker le score
 let gameInterval; // Variable pour stocker l'identifiant de l'intervalle
 let pause = false;
+let tick = 0; // Compteur de tick
+let lastTickSpacePressed; // Le dernier tick où la touche espace était pressée
 
 
 //fonction pour commencer le jeu 
@@ -37,7 +39,8 @@ function startGame() {
   //on fait que la méthode draw est appelé tout les 150 milisecondes
   gameInterval = setInterval(function() {
     if(!pause){
-      draw()
+      tick++
+      draw();
     }
     }, gameSpeed); // Stockage de l'identifiant de l'intervalle
 
@@ -45,6 +48,8 @@ function startGame() {
   sens = "ArrowRight";
   //on remet le score a zero si le joueur recommence
   score = 0;
+
+  tick = 0;
   //et on ajoute un carré au serpent 
   addNumberSnake(snake);
 }
@@ -57,16 +62,19 @@ function draw() {
   {
     //detecte une touche pressée
     document.addEventListener("keydown", function(event)  {
+    
       
       if (event.key == " "){
         
-        
+        console.log(event.key)
         menuPause(ctx);
         if(!pause){
           pause = true;
+          lastTickSpacePressed = tick;
         }
         else if (pause) {
           pause = false;
+          lastTickSpacePressed = tick;
         }
         
       }
@@ -105,6 +113,7 @@ function draw() {
     if(checkCollision(snake)){
       GameOver = true;
     }
+    temps(tick,ctx);
     //affichage du score
     drawScore(score,ctx);
     //dessiner le serpent 
