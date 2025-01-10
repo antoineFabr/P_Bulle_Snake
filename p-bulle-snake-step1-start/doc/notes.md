@@ -79,7 +79,14 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     j'ai remplis la methode checkWallCollision() donc quand le snake 
     touche un mur, un message apparait qui dit GameOver. quand on clique sur ok. 
 
+### collision du serpent et sa queue
+    au début j'ai fait tous le code nécessaire pour faire
+    cet ajout mais cela ne fonctionnait pas.
+    Monsieur Carrel m'a dépanné de ce problème c'était une histoire de return 
+    et de boucle for.
 
-## 20.12.24
-    A cause d'une grippe fulgurante j'était absent durant ce cours.
-    Je n'ai donc pas pu travailler.
+## 10.01.2024 
+
+### explication de monsieur Carrel
+    Monsieur Carrel nous a expliqué des détails sur le projet et la fin du projet.
+    cela a duré 15 minutes. 
