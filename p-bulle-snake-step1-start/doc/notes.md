@@ -75,7 +75,7 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     allait a droite on pouvais directement aller a gauche donc passer sur son propre corps.
     ce qui n'est pas voulu. Du coup maintenant on ne peux pas directement aller a la direction opposée.
 
-### collision Wall
+### collision Walls
     j'ai remplis la methode checkWallCollision() donc quand le snake 
     touche un mur, un message apparait qui dit GameOver. quand on clique sur ok. 
 
@@ -111,3 +111,7 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
     Monsieur Carrel est venu vers moi afin de défier mes connaissances de mon code
     avec 2 questions concernant la ligne 36 de la page snake.js et la deuxieme question était sur 
     la ligne 14 de la page collision.js.
+
+### correction de code obselete
+    suite a l'intervention de monsieur Carrel et a ces conseils j'ai nétoiller la page snake.js
+    car il y avait du code obselète.

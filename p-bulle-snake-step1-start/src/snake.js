@@ -32,22 +32,22 @@ export function moveSnake(snake,sens ) {
       snake[i].x = snake[i - 1].x
       snake[i].y = snake[i - 1].y
     }
-  let direction;
-  if (sens === "ArrowRight" && direction != 1) {
+  
+  if (sens === "ArrowRight") {
     snake[0].x += 20;
-    direction = 0;
+    
   }
-  if (sens === "ArrowLeft" && direction != 0) {
+  if (sens === "ArrowLeft") {
     snake[0].x -= 20;
-    direction = 1;
+    
   }
-  if (sens === "ArrowUp" && direction != 3) {
+  if (sens === "ArrowUp") {
     snake[0].y -= 20;
-    direction = 2;
+   
   }
-  if (sens === "ArrowDown" && direction != 2) {
+  if (sens === "ArrowDown" ) {
     snake[0].y += 20
-    direction = 3;
+    
   }
   return snake;
 }
