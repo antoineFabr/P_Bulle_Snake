@@ -41,7 +41,7 @@ export function checkWallCollision(snake) {
   return snake[0].x < 0 || snake[0].x > 380|| snake[0].y < 0 || snake[0].y > 380;
 
 }
-
+//cette fonction va regarder si la tete du serpent touche de la nouriture
 export function checkFoodCollision(snake, food){
   return snake[0].x == food.x && snake[0].y == food.y;
  

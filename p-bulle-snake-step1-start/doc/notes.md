@@ -90,3 +90,6 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### explication de monsieur Carrel
     Monsieur Carrel nous a expliqué des détails sur le projet et la fin du projet.
     cela a duré 15 minutes. 
+
+### documentation du code 
+    pendant 30 minutes j'ai documenté la majeur partie du code.
