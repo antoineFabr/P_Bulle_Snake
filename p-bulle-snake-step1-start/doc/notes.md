@@ -93,3 +93,7 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 
 ### documentation du code 
     pendant 30 minutes j'ai documenté la majeur partie du code.
+
+### fonction d'affichage de score
+    je me suis en premier documenter comment afficher du text dans un canvas grace a ce site : "https://developer.mozilla.org/fr/docs/Web/API/Canvas_API/Tutorial/Drawing_text"
+    ensuite j'ai appliqué ce que j'ai appris dans mon code pour afficher le score.

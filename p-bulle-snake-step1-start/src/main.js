@@ -5,7 +5,7 @@ import { generateFood, drawFood } from "./food.js";
 import { handleDirectionChange,checkdirection } from "./controls.js";
 import {checkWallCollision, checkFoodCollision, checkCollision } from "./collision.js";
 
-//import { drawScore } from "./score.js";
+import { drawScore } from "./score.js";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
@@ -38,6 +38,9 @@ function startGame() {
 
   //on remet que le sens de base est a droite
   sens = "ArrowRight";
+
+  //on remet le score a zero si le joueur recommence
+  score = 0;
 
   //et on ajoute un carré au serpent 
   addNumberSnake(snake);
@@ -82,6 +85,8 @@ function draw() {
     if(checkCollision(snake)){
       GameOver = true;
     }
+    //affichage du score
+    drawScore(score,ctx);
     //dessiner le serpent 
     drawSnake(snake,ctx,box);
     //dessiner la nouriture
