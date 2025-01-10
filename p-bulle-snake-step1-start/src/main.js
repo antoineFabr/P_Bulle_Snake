@@ -6,6 +6,7 @@ import { handleDirectionChange,checkdirection } from "./controls.js";
 import {checkWallCollision, checkFoodCollision, checkCollision } from "./collision.js";
 
 import { drawScore } from "./score.js";
+import { menuPause } from "./pause.js";
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
@@ -19,7 +20,7 @@ var sens = "ArrowRight";  //variable du sens de base du snake
 var GameOver; 
 let score = 0;  //variable pour stocker le score
 let gameInterval; // Variable pour stocker l'identifiant de l'intervalle
-
+let pause = false;
 
 
 //fonction pour commencer le jeu 
@@ -34,7 +35,11 @@ function startGame() {
   food = generateFood(box, canvas);
   
   //on fait que la méthode draw est appelé tout les 150 milisecondes
-  gameInterval = setInterval(draw, gameSpeed); // Stockage de l'identifiant de l'intervalle
+  gameInterval = setInterval(function() {
+    if(!pause){
+      draw()
+    }
+    }, gameSpeed); // Stockage de l'identifiant de l'intervalle
 
   //on remet que le sens de base est a droite
   sens = "ArrowRight";
@@ -52,10 +57,27 @@ function draw() {
   {
     //detecte une touche pressée
     document.addEventListener("keydown", function(event)  {
-      //si le changement de direction est autorisé le serpent tourne
+      
+      if (event.key == " "){
+        
+        
+        menuPause(ctx);
+        if(!pause){
+          pause = true;
+        }
+        else if (pause) {
+          pause = false;
+        }
+        
+      }
       if (!changeDirectionAllowed) return
+
       let key = event.key;
-      if (!checkdirection(key, sens)){ 
+      
+      
+      //si le changement de direction est autorisé le serpent tourne
+      if (!checkdirection(key, sens)){
+        
         sens = handleDirectionChange(key);
         changeDirectionAllowed = false;
       }

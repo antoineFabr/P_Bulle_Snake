@@ -97,3 +97,12 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### fonction d'affichage de score
     je me suis en premier documenter comment afficher du text dans un canvas grace a ce site : "https://developer.mozilla.org/fr/docs/Web/API/Canvas_API/Tutorial/Drawing_text"
     ensuite j'ai appliqué ce que j'ai appris dans mon code pour afficher le score.
+    Cela a duré 30 minutes.
+
+### fonction pour mettre pause au jeu
+    j'ai fait rajouter un fichier pause.js pour afficher un menu pause.
+    j'ai aussi rajouté que le code détecte quand la barre espace est utilisé, 
+    cela va appeler la méthode qui affiche le menu pause.
+    ensuite le probleme etait de mettre pause le jeu. 
+    je ne savais pas comment faire donc j'ai cherché sur des forums et j'ai trouvé comment faire sur ce site : "https://stackoverflow.com/questions/21277900/how-can-i-pause-setinterval-functions".
+    sauf que maintenant le bug c'est que ca fait aléatoirement pas pause, je dois encore regler ce problème
