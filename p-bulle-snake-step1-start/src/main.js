@@ -62,12 +62,11 @@ function draw() {
   {
     //detecte une touche pressée
     document.addEventListener("keydown", function(event)  {
-    
-      
+      //si la touche espace est pressée le jeu se met en pause
       if (event.key == " "){
-        
-        console.log(event.key)
+        //affiche le menu pause
         menuPause(ctx);
+        
         if(!pause){
           pause = true;
           lastTickSpacePressed = tick;
@@ -76,13 +75,9 @@ function draw() {
           pause = false;
           lastTickSpacePressed = tick;
         }
-        
       }
       if (!changeDirectionAllowed) return
-
       let key = event.key;
-      
-      
       //si le changement de direction est autorisé le serpent tourne
       if (!checkdirection(key, sens)){
         

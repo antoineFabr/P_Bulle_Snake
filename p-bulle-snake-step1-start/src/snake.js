@@ -7,7 +7,6 @@
  * @returns {Array<{x: number, y: number}>} - Un tableau contenant un objet représentant la position du premier segment du serpent.
  */
 export function initSnake() {
-  // A compléter
   
   let head = { x: 40 , y:180};
   return [head];
@@ -26,12 +25,12 @@ export function initSnake() {
  * @returns {{x: number, y: number}} - Un objet représentant les nouvelles coordonnées `x` et `y` de la tête du serpent après le déplacement.
  */
 export function moveSnake(snake,sens ) {
-  // A compléter
+  
   for (let i = snake.length -1; i > 0; i--)
-    {
-      snake[i].x = snake[i - 1].x
-      snake[i].y = snake[i - 1].y
-    }
+  {
+    snake[i].x = snake[i - 1].x
+    snake[i].y = snake[i - 1].y
+  }
   
   if (sens === "ArrowRight") {
     snake[0].x += 20;
@@ -82,6 +81,7 @@ export function drawSnake(snake,ctx,box) {
   }
 }
 
+//cette méthode ajoute un carré au serpent
 export function addNumberSnake(snake){
 
   let lastrectangle = snake[snake.length - 1]

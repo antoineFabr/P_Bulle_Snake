@@ -119,4 +119,8 @@ Description des commits (Journal de travail) : [temps] [WIP ou bien DONE]
 ### ajout du temps de jeu 
     j'ai ajouter une méthode qui va afficher le temps de jeu 
     en prennant le nombre de tick du jeu, en le divisant par 6.66 et en enlevant la virgule
-    on a les secondes
+    on a les secondes.
+
+### nettoyage final du code
+    pour cette dernière periode j'ai nettoyé mon code pour qu'il soit près 
+    pour le rendu final. j'ai donc commenté mon code et bien enlever toutes les lignes de mon code obselètes.

@@ -12,7 +12,7 @@ import { generateFood} from "./food.js";
  * @returns {boolean} - Retourne `true` si la tête du serpent entre en collision avec un segment de son corps, sinon `false`.
  */
 export function checkCollision(snake) {
-  // A compléter
+  //on regarde si les coordonées de la tete sont les memes que 
   
   for(let i = 1; i < snake.length ; i++){
     if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){

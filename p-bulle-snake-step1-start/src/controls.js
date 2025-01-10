@@ -41,7 +41,7 @@ export function handleDirectionChange(event) {
   
  
 }
-//cette méthode regarde si le joueur peux aller dans un sens sans que le serpent se rentre dans lui meme.
+//cette méthode renvoie la condition de si on peut aller dans un sens (si le serpent va a droite on ne peut pas aller directement a gauche)
 export function checkdirection(key, sens){
 
   return sens == "ArrowRight" && key == "ArrowLeft" || sens == "ArrowLeft" && key == "ArrowRight" || sens == "ArrowUp" && key == "ArrowDown" || sens == "ArrowDown" && key == "ArrowUp" || key == " ";

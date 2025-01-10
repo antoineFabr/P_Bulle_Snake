@@ -12,6 +12,7 @@ export function temps(tick, ctx){
   if(parseInt(temps)){
     //on enleve la virgule
     temps = Math.trunc(temps);
+    //et on affiche
     ctx.fillStyle = "#cccccc";
     ctx.font = "20px serif";
     ctx.fillText(temps,350, 20);

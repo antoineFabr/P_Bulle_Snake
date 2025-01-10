@@ -10,7 +10,7 @@
  * @returns {{x: number, y: number}} - Un objet contenant les coordonnées `x` et `y` de la nourriture générée.
  */
 export function generateFood(box,canvas) {
-  // A compléter
+  
   let y = Math.floor(Math.random() * (canvas.height - 20));
  
   y = y/20;
@@ -42,7 +42,7 @@ export function generateFood(box,canvas) {
  * @param {number} box - La taille d'une case de la grille en pixels, utilisée pour déterminer la taille de la nourriture.
  */
 export function drawFood(food,box,ctx) {
-  // A compléter
+  //afficher la nouriture
   ctx.beginPath();
 
   ctx.fillStyle = "red";
