@@ -13,7 +13,7 @@ export function generateFood(box,canvas) {
   // A compléter
   let y = Math.floor(Math.random() * (canvas.height - 20));
  
-  y = y/20 ;
+  y = y/20;
  
   y = Math.round(y);
 
